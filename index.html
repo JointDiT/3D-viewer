@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Model Viewer</title>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <style>
+        body { text-align: center; font-family: Arial, sans-serif; }
+        model-viewer { width: 45%; height: 500px; margin: 20px; }
+    </style>
+</head>
+<body>
+    <h1>3D Models</h1>
+
+    <h3>Castle:</h3>
+    <model-viewer src="assets/sword_1280_768.glb" alt="Castle" auto-rotate camera-controls></model-viewer>
+
+    <!-- <h3>Thinker:</h3>
+    <model-viewer src="assets/thinker.glb" alt="Thinker" auto-rotate camera-controls></model-viewer>
+
+    <h3>Rocks:</h3>
+    <model-viewer src="assets/rocks.glb" alt="Rocks" auto-rotate camera-controls></model-viewer>
+
+    <h3>Gourd:</h3>
+    <model-viewer src="assets/gourd.glb" alt="Gourd" auto-rotate camera-controls></model-viewer> -->
+
+    <p>(Click and drag to rotate, scroll to zoom)</p>
+</body>
+</html>
