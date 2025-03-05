@@ -1,0 +1,15 @@
+@font-face {
+    font-family: "MyCustomFont"; /* 웹에서 사용할 폰트 이름 */
+    src: url('fonts/MyFont.ttf') format('truetype'),  /* .ttf 파일 */
+         url('fonts/MyFont.otf') format('opentype'); /* .otf 파일 */
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 사용 예시 */
+p {
+    font-family: "MyCustomFont", sans-serif;
+    font-size: 20px;
+    margin-top: 10px;
+    font-weight: bold;
+}
