@@ -14,6 +14,22 @@
         }
     </script>
     <style>
+        @font-face {
+            font-family: "MyCustomFont"; /* 사용할 폰트 이름 */
+            src: url('fonts/NanumPen.ttf') format('truetype'), 
+                url('fonts/NanumPen.otf') format('opentype'); /* OTF와 TTF 폰트 지원 */
+            font-weight: large;
+            font-style: normal;
+        }
+
+        /* 특정 텍스트에만 로컬 폰트 적용 */
+        #custom-text {
+            font-family: "MyCustomFont", sans-serif;  /* 로컬 폰트 적용 */
+            font-size: 30px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
         body {
             font-family: Arial, sans-serif;
             text-align: center;
@@ -65,32 +81,35 @@
 </head>
 <body>
     <h1>3D Model Viewer</h1>
-    <p id="custom-text">RGB Image, Depth Map, and 3D Model</p>
-
-    <div class="container">
-        <!-- 첫 번째 모델 -->
+    
+    <p id="custom-text">"A majestic rainbow dragon with large, powerful wings and shimmering, <br>iridescent scales, gracefully gliding."</p>
+    <div class="container" style="margin-bottom: 50px;">
         <div class="item">
-            <p>Model 1</p>
             <img id="rgb-img0" src="assets/000_image.png" alt="RGB Image 1">
             <img id="depth-img0" src="assets/000_depth.png" alt="Depth Map 1">
             <div class="viewer-container" id="canvas-container0"></div>
         </div>
-
+    </div>
+    
+    <p id="custom-text">"A small black kitten balancing a levitating <br> potion bottle filled with shimmering blue liquid."</p>
+    <div class="container" style="margin-bottom: 50px;">
         <!-- 두 번째 모델 -->
         <div class="item">
-            <p>Model 2</p>
             <img id="rgb-img1" src="assets/001_image.png" alt="RGB Image 2">
             <img id="depth-img1" src="assets/001_depth.png" alt="Depth Map 2">
             <div class="viewer-container" id="canvas-container1"></div>
         </div>
+    </div>
 
+    <p id="custom-text">"Elderly man with gray cap, glasses, and a white beard,<br> wearing a vintage suit, with a serious expression and dark background."</p>
+    <div class="container" style="margin-bottom: 50px;">
         <!-- 세 번째 모델 -->
         <div class="item">
-            <p>Model 3</p>
             <img id="rgb-img2" src="assets/002_image.png" alt="RGB Image 3">
             <img id="depth-img2" src="assets/002_depth.png" alt="Depth Map 3">
             <div class="viewer-container" id="canvas-container2"></div>
         </div>
+    </div>
     </div>
 
     <script type="module">
